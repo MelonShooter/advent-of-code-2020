@@ -4,7 +4,7 @@ import com.deliburd.adventofcode.annotations.Day;
 import com.deliburd.adventofcode.annotations.EntryPoint;
 
 @Day(1)
-public class ReportRepair {
+public class Day1ReportRepair {
 	@EntryPoint
 	public static void start() {
 		int[] expenseReport = {
