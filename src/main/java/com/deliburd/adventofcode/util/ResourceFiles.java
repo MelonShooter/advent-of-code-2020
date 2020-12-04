@@ -19,4 +19,12 @@ public class ResourceFiles {
 			throw new UncheckedIOException(e);
 		}
 	}
+	
+	public static String getResourceString(String inputFileName) {
+		try {
+			return FileUtils.readFileToString(FileUtils.toFile(Resources.getResource(inputFileName)), StandardCharsets.UTF_8);
+		} catch (IOException e) {
+			throw new UncheckedIOException(e);
+		}
+	}
 }
